@@ -1,5 +1,6 @@
 URL = 'https://qa-scooter.praktikum-services.ru/'
 ORDER_PAGE_URL = f'{URL}order'
+YANDEX_URL = 'https://dzen.ru/?yredirect=true'
 
 NAME_FIRST = 'Василий'
 SURNAME_FIRST = 'Петров'
@@ -25,6 +26,11 @@ TEXT_OF_EXTEND_ORDER_QUESTION= 'Можно ли продлить заказ ил
 TEXT_OF_CHARGER_QUESTION = 'Вы привозите зарядку вместе с самокатом?'
 TEXT_OF_CANCELING_ORDER_QUESTION = 'Можно ли отменить заказ?'
 TEXT_OF_LONG_DISTANCE_QUESTION = 'Я жизу за МКАДом, привезёте?'
+
+LIST_OF_QUESTIONS = [TEXT_OF_THE_COST_QUESTION, TEXT_OF_MULTIPLE_SCOOTERS_QUESTION,
+                     TEXT_OF_CALCULATING_TIME_RENT_QUESTION, TEXT_OF_TODAY_ORDER_QUESTION,
+                     TEXT_OF_EXTEND_ORDER_QUESTION, TEXT_OF_CHARGER_QUESTION, TEXT_OF_CANCELING_ORDER_QUESTION,
+                     TEXT_OF_LONG_DISTANCE_QUESTION]
 
 TEXT_OF_THE_COST_QUESTION_BLOCK = 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'
 TEXT_OF_MULTIPLE_SCOOTERS_QUESTION_BLOCK = ('Пока что у нас так: один заказ — один самокат. Если хотите покататься с '

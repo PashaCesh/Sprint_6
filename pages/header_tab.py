@@ -11,13 +11,20 @@ class HeaderTab(BasePage):
         super().__init__(driver)
         self.url = ORDER_PAGE_URL
 
-    @allure.step("Кликнуть на логотоп 'Самокат' и проверить переход на главную страницу")
+    @allure.step("Кликнуть на логотоп 'Самокат'")
     def click_on_scooter_logo(self):
-        self.click_on_element(HeaderLocators.scooter_logo)
+        self.click_on_element(HeaderLocators.SCOOTER_LOGO)
+
+    @allure.step("Проверить переход на главную страницу")
+    def check_redirect_to_main_page(self):
         assert self.driver.current_url == URL
 
-    @allure.step("Кликнуть на логотоп 'Яндекс' и проверить переход на Яндекс.Дзен")
+    @allure.step("Кликнуть на логотоп 'Яндекс'")
     def click_on_yandex_logo(self):
-        self.click_on_element(HeaderLocators.yandex_logo)
+        self.click_on_element(HeaderLocators.YANDEX_LOGO)
         self.switch_tab()
-        assert self.find_element(HeaderLocators.yandex_search_field).is_displayed()
+
+    @allure.step("Проверить переход на Яндекс.Дзен")
+    def check_redirect_to_yandex_dzen(self):
+        assert self.find_element(HeaderLocators.YANDEX_SEARCH_FIELD).is_displayed()
+        assert self.driver.current_url == YANDEX_URL

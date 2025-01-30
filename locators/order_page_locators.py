@@ -1,52 +1,52 @@
 class OrderPageLocators:
 
     #Поле для ввода "* Имя"
-    input_name_field = '//input[@placeholder="* Имя"]'
+    INPUT_NAME_FIELD = '//input[@placeholder="* Имя"]'
 
     #Поле для ввода "* Фамилия"
-    input_surname_field = '//input[@placeholder="* Фамилия"]'
+    INPUT_SURNAME_FIELD = '//input[@placeholder="* Фамилия"]'
 
     #Поле для ввода "* Адрес: куда привезти заказ"
-    input_address_field = '//input[@placeholder="* Адрес: куда привезти заказ"]'
+    INPUT_ADDRESS_FIELD = '//input[@placeholder="* Адрес: куда привезти заказ"]'
 
     #Поле для ввода станции метро
-    input_subway_station_field = '//input[@class="select-search__input"]'
+    INPUT_SUBWAY_STATION_FIELD = '//input[@class="select-search__input"]'
 
     #Элемент выпадающего списка при поиске станции метро
-    subway_station_dropdown_list = '//div[@class="select-search__select"]'
+    SUBWAY_STATION_DROPDOWN_LIST = '//div[@class="select-search__select"]'
 
     #Поле для ввода "* Телефон: на него позвонит курьер"
-    input_phone_number_field = '//input[@placeholder="* Телефон: на него позвонит курьер"]'
+    INPUT_PHONE_NUMBER_FIELD = '//input[@placeholder="* Телефон: на него позвонит курьер"]'
 
     #Кнопка "Далее"
-    continue_button = '//button[text()="Далее"]'
+    CONTINUE_BUTTON = '//button[text()="Далее"]'
 
     #Поле для ввода "* Когда привезти самокат"
-    input_date_field = '//input[@placeholder="* Когда привезти самокат"]'
+    INPUT_DATE_FIELD = '//input[@placeholder="* Когда привезти самокат"]'
 
     #Поле "* Срок аренды"
-    rental_period_field = '//span[@class="Dropdown-arrow"]'
+    RENTAL_PERIOD_FIELD = '//span[@class="Dropdown-arrow"]'
 
     #Вариант "двое суток" в выпадающем списке
-    two_days_rental_period_variant = '//div[text()="двое суток"]'
+    TWO_DAYS_RENTAL_PERIOD_VARIANT = '//div[text()="двое суток"]'
 
     #Вариант "трое суток" в выпадающем списке
-    three_days_rental_period_variant = '//div[text()="трое суток"]'
+    THREE_DAYS_RENTAL_PERIOD_VARIANT = '//div[text()="трое суток"]'
 
     #Чекбокс "чёрный жемчуг"
-    checkbox_black_pearl = '//label[@for="black"]'
+    CHECKBOX_BLACK_PEARL = '//label[@for="black"]'
 
     #Чекбокс "серая безысходность"
-    checkbox_gray_hopelessness = '//label[@for="grey"]'
+    CHECKBOX_GRAY_HELPLESSNESS = '//label[@for="grey"]'
 
     #Поле для ввода "Комментарий для курьера"
-    comment_for_courier_field = '//input[@placeholder="Комментарий для курьера"]'
+    COMMENT_FOR_COURIER_FIELD = '//input[@placeholder="Комментарий для курьера"]'
 
     # Кнопка "Заказать"
-    order_button = '//div[@class="Order_Buttons__1xGrp"]/button[text()="Заказать"]'
+    ORDER_BUTTON = '//div[@class="Order_Buttons__1xGrp"]/button[text()="Заказать"]'
 
     # Кнопка "Да"
-    confirm_button = '//div[@class="Order_Buttons__1xGrp"]/button[text()="Да"]'
+    CONFIRM_BUTTON = '//div[@class="Order_Buttons__1xGrp"]/button[text()="Да"]'
 
     #Заголовок "Заказ оформлен"
-    header_order_status = '//div[@class="Order_ModalHeader__3FDaJ"]'
+    HEADER_ORDER_STATUS = '//div[@class="Order_ModalHeader__3FDaJ"]'
